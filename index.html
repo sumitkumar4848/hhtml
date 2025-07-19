@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <!-- Incorrect Slack link removed as it is not a valid stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Navigation Bar ======= -->
+  <nav class="navbar" style=" z-index: 999;">
+
+    <div class="logo">LOGO</div>
+
+    <!-- ======= Search Bar ======= -->
+    <div class="SiteSearch_root" id="top-navbar">
+      <div class="MuiAutocomplete-root css-chq866">
+        <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-feqhe6">
+          <div class="MuiInputBase-root MuiOutlinedInput-root SiteSearch_searchInput__vxatc MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-18ga69m">
+            <div class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-5mrk1s">
+              <span class="notranslate">​</span>
+              <!-- Search Icon -->
+              <svg viewBox="0 0 24 24" role="presentation" style="width: 1.5rem; height: 1.5rem;">
+                <path d="..."></path>
+              </svg>
+            </div>
+
+            <!-- Search Input -->
+            <input placeholder="Search" type="text" class="MuiInputBase-input ..." />
+            <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+              <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ======= Navigation Links ======= -->
+  <ul class="nav-links m-2" id="navDropdown">
+    <li><a href="index.html">Home</a></li>
+  
+    <!-- Dropdown for Services -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+        <li><a class="dropdown-item" href="tests.html">Tests</a></li>
+         <li><a class="dropdown-item" href="authors.html">authors</a></li>
+      </ul>
+    </li>
+  
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+     
+    </div>
+
+    <!-- ======= Menu Toggle Button (for mobile) ======= -->
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+
+  <!-- ======= Carousel Section ======= -->
+ <section class="slider" style="z-index: 0;">
+    <div class="container-fluid p-0">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="image/work-3.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First Slide Label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="image/work-5.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second Slide Label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="image/work-7.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third Slide Label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section> 
+ 
+
+
+  <!-- ======= Section 1: Hero / Intro ======= -->
+  <section class="section1">
+    <div class="sec1-cont container-fluid d-flex">
+      <!-- Left Text Content -->
+      <div class="text-content1 w100mw500 col-md-6">
+        <h2>Online Learning</h2>
+        <h4>Learn Everyday</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nesciunt quibusdam corporis laudantium, aperiam deleniti architecto beatae temporibus odio. Dolorem qui recusandae magni, maxime sit eius et consectetur temporibus debitis? Quod neque minus commodi accusantium quibusdam, autem nostrum dolor esse numquam, saepe iure iste sint illum. Similique aliquid vitae incidunt.</p>
+        <button class="btn btn-secondary">Click Me</button>
+        <p class="mt-4">Image by <a href="https://www.freepik.com" target="_blank">Freepik</a></p>
+      </div>
+
+      <!-- Right Image Content -->
+      <div class="image-content w100mw500 col-md-6">
+        <img src="image/-min.jpg" alt="Decorative" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Section 2: Learning Promo ======= -->
+  <section class="section2">
+    <div class=" container-fluid">
+      <div class="sec2-cont row">
+        <!-- Left Image -->
+        <div class="w100mw500 col-md-6 image-content2">
+          <img src="image/wef-min.jpg" alt="Decorative" class="img-fluid" />
+        </div>
+
+        <!-- Right Text -->
+        <div class="w100mw500 col-md-6 text-content2">
+          <div class="div">
+            <h2>Get access to high quality learning!</h2>
+            <h4>Join online courses today</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique alias sequi quae in voluptatibus corrupti, cumque cum perspiciatis! Labore voluptatem consectetur, tenetur expedita dignissimos illum quasi dicta error commodi officia laudantium, perferendis officiis ratione! Tempore ipsa eum incidunt porro ab eligendi modi ea voluptas laborum, sint beatae magnam vitae.</p>
+            <button class="btn btn-secondary">Read More</button>
+            <p>Image by <a href="https://www.freepik.com" target="_blank">Freepik</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Section 3: Cards / Posts ======= -->
+  <section class="section3">
+    <div class="card-cont1 container d-flex justify-content-center">
+      
+      <!-- Card 1 -->
+      <div class="cards">
+        <img class="card-img" src="image/mountain.jpeg" alt="Mountain" class="img-fluid" />
+        <div class="card-content">
+          <h2 class="card-title">Sunset Over Mountains</h2>
+          <p class="card-text">Beautiful view of the sun setting behind the hills...</p>
+        </div>
+        <div class="cards-footer">
+          Posted on July 15, 2025
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cards">
+        <img class="card-img" src="image/mountain.jpeg" alt="Mountain" class="img-fluid" />
+        <div class="card-content">
+          <h2 class="card-title">Sunset Over Mountains</h2>
+          <p class="card-text">Beautiful view of the sun setting behind the hills...</p>
+        </div>
+        <div class="cards-footer">
+          Posted on July 15, 2025
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cards">
+        <img class="card-img" src="image/mountain.jpeg" alt="Mountain" class="img-fluid" />
+        <div class="card-content">
+          <h2 class="card-title">Sunset Over Mountains</h2>
+          <p class="card-text">Beautiful view of the sun setting behind the hills...</p>
+        </div>
+        <div class="cards-footer">
+          Posted on July 15, 2025
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<!-- section 4  ideas -->
+
+  <section class="section5">
+    <div class="container card-ctnr2 d-flex justify-content-center">        
+        <!--ITEM 1-->
+             <div class="card-sec2">
+              <div class="items d-flex align-items-start gap-3">
+               <i class="fa fa-leaf fa-2x text-success icon-left"></i>
+                 <div class="text">
+                  <h2>Clean Themes</h2>
+                 <p>Nulla fringilla urna ac urna volutpat, quis congue massa dignissim. Suspendisse quis orci id dolor vehicula porta quis in dolor.
+                </p>
+               </div>
+              </div>
+            </div>
+
+    				<!--ITEM 2-->
+								<div class="card-sec2">
+									<div class="items d-flex align-items-start gap-3">
+                  <i class="fa fa-desktop fa-2x text-success icon-left"></i>
+										<div class="text">
+											<h2>fully responsive</h2>
+											<p>Ut magna diam, placerat ac diam et, ornare volutpat libero. Curabitur erat nisl, sollicitudin sit amet rhoncus interdum, adipiscing aliquet est.</p>
+										</div>
+									</div>
+								</div>
+								<!--ITEM 2-->
+
+								<!--ITEM 3-->
+								<div class="card-sec2">
+									<div class="items d-flex align-items-start gap-3">
+                  <i class="fa fa-eye fa-2x text-success icon-left"></i>
+										<div class="text">
+											<h2>pixels perfect</h2>
+											<p>Phasellus eget massa quam. Cras mi purus, accumsan id pretium sed, faucibus quis diam. Maecenas aliquet, lacus a porttitor porta, sapien.</p>
+										</div>
+									</div>
+								</div>
+								<!--ITEM 3-->
+
+								<!--ITEM 4-->
+								<div class="card-sec2">
+									<div class="items d-flex align-items-start gap-3">
+                  <i class="fa fa-font fa-2x text-success icon-left"></i>
+										<div class="text">
+											<h2>google fonts</h2>
+											<p>Etiam sollicitudin tempus quam, at lacinia urna rutrum sed. Integer quis arcu quis metus sagittis feugiat. Nulla facilisi. Integer molestie nec justo in convallis.</p>
+										</div>
+									</div>
+								</div>
+								<!--ITEM 4-->
+
+								<!--ITEM 5-->
+								<div class="card-sec2">
+									<div class="items d-flex align-items-start gap-3">
+                  <i class="fa fa-code-fork fa-2x text-success icon-left"></i>
+										<div class="text">
+											<h2>structured code</h2>
+											<p>Suspendisse nec lacus id urna mollis convallis. Sed risus massa, sodales sed porta eu, elementum ac magna. Phasellus et suscipit ipsum.</p>
+										</div>
+									</div>
+								</div>
+								<!--ITEM 5-->
+
+								<!--ITEM 6-->
+								<div class="card-sec2">
+									<div class="items d-flex align-items-start gap-3">
+                  <i class="fa fa-lightbulb fa-2x text-success icon-left"></i>
+										<div class="text">
+											<h2>creative ideas</h2>
+											<p>Aenean luctus, nisl et congue commodo, ligula neque fringilla lorem, quis vehicula est leo et tortor. Cum sociis natoque penatibus et magnis dis.</p>
+										</div>
+									</div>
+								</div>
+								<!--ITEM 6-->
+						</div> <!-- indents -->
+					</section>
+
+
+          <!--section 5  -->
+
+  <section class="section5">
+  <div class="container">
+  <div class="indents">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="title">
+										<h2>how many</h2>
+										<span></span>
+										<p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
+									</div> <!-- title -->
+								</div>
+							</div> <!-- row -->
+							<div class="row">
+								<!--ITEM 1-->
+								<div class="col-sm-4">
+									<div class="item wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+										<h4>basic</h4>
+										<h5>$29.99</h5>
+										<ul>
+											<li>2 Domains</li>
+											<li>5GB Hosting</li>
+											<li>Limited Accounts</li>
+											<li>FTP</li>
+											<li>Full Support</li>
+										</ul>
+										<a class="button" href="#"><i class="fa fa-credit-card"></i><span>buy now</span></a>
+									</div>
+								</div>
+								<!--ITEM 1-->
+
+								<!--ITEM 2-->
+								<div class="col-sm-4">
+									<div class="item wow fadeInUp animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+										<h4>standart</h4>
+										<h5>$59.99</h5>
+										<ul>
+											<li>5 Domains</li>
+											<li>25GB Hosting</li>
+											<li>Unlimited Accounts</li>
+											<li>FTP</li>
+											<li>Full Support</li>
+										</ul>
+										<a class="button" href="#"><i class="fa fa-credit-card"></i><span>buy now</span></a>
+									</div>
+								</div>
+								<!--ITEM 2-->
+
+								<!--ITEM 3-->
+								<div class="col-sm-4">
+									<div class="item wow fadeInUp animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+										<h4>pro</h4>
+										<h5>$99.99</h5>
+										<ul>
+											<li>40 Domains</li>
+											<li>500GB Hosting</li>
+											<li>Unlimited Accounts</li>
+											<li>FTP + SSH</li>
+											<li>24/7 Full Support</li>
+										</ul>
+										<a class="button" href="#"><i class="fa fa-credit-card"></i><span>buy now</span></a>
+									</div>
+								</div>
+								<!--ITEM 3-->
+							</div> <!-- row -->
+						</div>
+            </div>
+  </section>
+
+
+  <!-- ======= Footer Section ======= -->
+  <footer class="footer">
+    <div class="container-fluid columns">
+
+      <!-- Footer Logo Column -->
+      <div class="column logo-column">
+        <h2>LOGO</h2>
+        <p>Catalog-Z is a free Bootstrap 5 template for video/photo websites...</p>
+      </div>
+
+      <!-- Footer Links Column -->
+      <div class="column link-column">
+        <h2>Other Links</h2>
+        <ul  style="list-style-type: none;"  >
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="column social-box">
+        <h2>VISIT</h2>
+        <ul class="social-icons">
+          <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="column copyrights">
+        <p>&copy; 2020 Catalog-Z Company. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======= Bootstrap JS ======= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const navbar = document.getElementById("top-navbar")
+
+    const toggleMenu = () => {
+        navbar.classList.toggle("mobile-search-root");
+    }
+  </script>
+
+</body>
+</html>

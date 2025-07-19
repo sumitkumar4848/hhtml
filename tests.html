@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+ <!-- ======= Navigation Bar ======= -->
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+
+    <!-- ======= Search Bar ======= -->
+    <div class="SiteSearch_root">
+      <div class="MuiAutocomplete-root css-chq866">
+        <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-feqhe6">
+          <div class="MuiInputBase-root MuiOutlinedInput-root SiteSearch_searchInput__vxatc MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-18ga69m">
+            <div class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-5mrk1s">
+              <span class="notranslate">​</span>
+              <!-- Search Icon -->
+              <svg viewBox="0 0 24 24" role="presentation" style="width: 1.5rem; height: 1.5rem;">
+                <path d="..."></path>
+              </svg>
+            </div>
+
+            <!-- Search Input -->
+            <input placeholder="Search" type="text" class="MuiInputBase-input ..." />
+            <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+              <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ======= Navigation Links ======= -->
+  <ul class="nav-links m-2" id="navDropdown">
+    <li><a href="index.html">Home</a></li>
+  
+    <!-- Dropdown for Services -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+        <li><a class="dropdown-item" href="tests.html">Tests</a></li>
+        <li><a class="dropdown-item" href="authors.html">authors</a></li>
+      </ul>
+    </li>
+  
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+     
+    </div>
+
+
+
+    <!-- ======= Menu Toggle Button (for mobile) ======= -->
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  
+
+  <!-- ======= Footer Section ======= -->
+  <footer class="footer section3">
+    <div class="container-fluid columns">
+
+      <!-- Footer Logo Column -->
+      <div class="column logo-column">
+        <h2>LOGO</h2>
+        <p>Catalog-Z is a free Bootstrap 5 template for video/photo websites...</p>
+      </div>
+
+      <!-- Footer Links Column -->
+      <div class="column link-column">
+        <h2>Other Links</h2>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="column social-box">
+        <h2>VISIT</h2>
+        <ul class="social-icons">
+          <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="column copyrights">
+        <p>&copy; 2020 Catalog-Z Company. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navDropdown');
+      menu.classList.toggle('d-none');
+    }
+  </script>
+
+</body>
+</html>
